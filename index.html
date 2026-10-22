@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#174b37">
+<meta name="description" content="Unani Vitiligo Research & Training Centre — Vaidya Vinit Kumar">
+
+<link rel="icon" type="image/png" href="Unani.PNG">
+
+<title>Unani Vitiligo Research & Training Centre</title>
+<style>
+:root{--green:#174b37;--leaf:#6d9568;--skin:#e9c8ad;--cream:#f7f5ed;--ink:#243b2e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 90% 15%,#e7cbb5,transparent 30%),linear-gradient(135deg,#f7f5ed,#e0eddf);line-height:1.7}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  color: #174b37;
+  line-height: 1.3;
+}
+
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.brand small {
+  display: block;
+  font-weight: normal;
+  color: #687b6d;
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1100px,92%);margin:auto}
+.glass{background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 15px 45px #174b3715;border-radius:24px}
+header{position:sticky;top:8px;z-index:10;width:96%;margin:8px auto;padding:12px 20px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{font-weight:bold;color:var(--green);line-height:1.3}
+.brand small{display:block;font-weight:normal;color:#687b6d}
+.links{display:flex;gap:20px;align-items:center}
+.links a:hover{color:var(--leaf)}
+.btn{display:inline-block;padding:12px 20px;border-radius:30px;background:var(--green);color:white;font-weight:bold;border:0;cursor:pointer}
+.btn.light{background:#fff;color:var(--green);border:1px solid #d8e4d5}
+.btn:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.menu{display:none;background:white;border:0;padding:9px;border-radius:10px;font-size:20px}
+.hero{padding:65px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.tag{color:#49764f;font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(36px,5vw,62px);line-height:1.08;letter-spacing:-2px;margin:15px 0}
+h1 span{color:#548458}
+p{color:#586b5e}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}
+.portrait{padding:22px;text-align:center}
+.portrait img{width:100%;height:370px;object-fit:cover;object-position:center 30%;border-radius:18px;border:5px solid white;box-shadow:0 10px 30px #174b3720}
+.portrait h2{margin:12px 0 0;color:var(--green)}
+.stats,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.stat{text-align:center;padding:20px 12px}
+.stat strong{display:block;color:var(--green);font-size:27px}
+.stat small{color:#637568}
+section{padding:42px 0}
+.heading{text-align:center;max-width:700px;margin:0 auto 28px}
+.heading h2{font-size:clamp(27px,4vw,39px);line-height:1.2;margin:8px 0}
+.panel{padding:30px}
+.cards article{padding:25px}
+.cards h3{color:var(--green)}
+.icon{font-size:30px}
+.note{padding:18px;margin-top:18px;font-size:14px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-grid .panel{padding:28px}
+.contact-actions{display:grid;gap:12px;margin-top:20px}
+.contact-actions .btn{text-align:center}
+.detail{padding:12px 0;border-bottom:1px solid #174b371c}
+.detail:last-child{border:0}
+.detail small{display:block;color:#687b6d}
+.youtube{padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+details{padding:0 20px;margin:10px 0}
+summary{cursor:pointer;padding:16px 0;font-weight:bold;color:var(--green)}
+details p{padding-bottom:12px}
+footer{margin-top:30px;padding:30px 0 90px;border-top:1px solid #174b371c;font-size:14px}
+.footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.quick{position:fixed;right:15px;bottom:16px;z-index:20;display:flex;gap:9px}
+.quick a{background:var(--green);color:white;padding:13px 16px;border-radius:50px;box-shadow:0 8px 25px #0002}
+@media(max-width:760px){
+ .hero-grid,.contact-grid{grid-template-columns:1fr}
+ .hero{padding-top:40px}
+ .portrait img{height:360px}
+ .stats,.cards{grid-template-columns:1fr}
+ .links{display:none;position:absolute;top:70px;left:0;right:0;background:#fffffff2;padding:20px;border-radius:18px;flex-direction:column;box-shadow:0 10px 30px #0001}
+ .links.open{display:flex}
+ .menu{display:block}
+ nav .navcall{display:none}
+ .youtube{align-items:flex-start;flex-direction:column}
+}
+
+/* Improve overall website readability */
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 14px 22px;
+  min-height: 48px;
+}
+
+.brand {
+  font-size: 1rem;
+}
+
+.brand small {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 17px;
+  }
+
+  .wrap {
+    width: 94%;
+  }
+
+  .panel,
+  .contact-card,
+  .cards article {
+    padding: 22px;
+  }
+
+  .hero {
+    padding-top: 35px;
+  }
+}
+
+</style>
+</head>
+<body>
+<header class="glass">
+<nav class="wrap">
+
+<a href="#home" class="brand">
+  <img src="Unani.PNG" alt="Unani Vitiligo Research Centre Logo"
+       class="brand-logo">
+  <span>
+    UNANI VITILIGO RESEARCH
+    <small>&amp; TRAINING CENTRE</small>
+  </span>
+</a>
+
+<button class="menu" id="menu" aria-label="Open navigation">☰</button>
+<div class="links" id="links">
+<a href="#about">About</a><a href="#services">Conditions</a><a href="#contact">Contact</a><a href="#faq">FAQs</a>
+</div>
+<a class="btn navcall" href="tel:+919934903404">☎ Call Now</a>
+</nav>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="tag">Traditional care · Personal guidance</div>
+<h1>Welcome! Discover our approach to <span>white patches</span>.</h1>
+<p>Welcome to the Unani Vitiligo Research & Training Centre, associated with Vaidya Vinit Kumar. We understand that skin conditions can bring many questions and concerns. Our aim is to provide aurvedic medicine and provide respectful space to discuss white patches (vitiligo/leucoderma), psoriasis and piles, and help people understand possible next steps.</p>
+<p>Our centre provides ayurvedic medicine for vitiligo, psoriasis and piles. Every person's needs are different, and an appropriate medical assessment can help determine the right course of action.We just don't give medicines we create fully customised medicines according to the patient's skin type</p>
+<div class="actions">
+<a class="btn" href="tel:+919934903404">☎ Call +91 99349 03404</a>
+<a class="btn light" href="https://wa.me/919934903404" target="_blank" rel="noopener">WhatsApp Us</a>
+</div>
+<p><small>Questions are welcome. Read the contact and medical information below.</small></p>
+</div>
+<div class="portrait glass">
+<img src="IMG_20261021_184709.JPG" alt="Vaidya Vinit Kumar">
+<h2>Vaidya Vinit Kumar</h2>
+<p>Patient guidance and traditional care</p>
+</div>
+</div>
+<div class="wrap stats">
+<div class="stat glass"><strong>45 Years</strong><small> 45 years of experience</small></div>
+<div class="stat glass"><strong>1 Lakh+</strong><small>Patients treated till date</small></div>
+<div class="stat glass"><strong>₹0</strong><small>Calls and messages for questions. You can call and book appointments for free unlimited time.</small></div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<div class="heading"><div class="tag">About the centre</div><h2>Care begins with a conversation.</h2><p>Clear information, respectful communication and a patient-first approach.</p></div>
+<div class="panel glass">
+<p>The Unani Vitiligo Research & Training Centre is associated with Vaidya Vinit Kumar. The centre reports 45 years of experience and more than one lakh patients treated.</p>
+<p>According to the centre's stated policy, you may call or message to ask questions without a charge or a fixed limit on how many times you contact the practitioner. Consultations, medicines, tests or in-person services have separate costs.</p>
+<p>Every person is different. No treatment outcome can be guaranteed. For new or changing skin patches, seek an assessment from us.</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="heading"><div class="tag">Areas of interest</div><h2>How can we help?</h2><p>Learn about the conditions you would like to discuss.</p></div>
+<div class="cards">
+<article class="glass"><div class="icon">🌼</div><h3>White Patches</h3><p>We treate in White Patches Vitiligo and leucoderma are terms associated with white patches. Different conditions can look similar.</p></article>
+<article class="glass"><div class="icon">🍃</div><h3>Psoriasis</h3><p>We treate jn psoriasis. A long-term inflammatory skin condition.</p></article>
+<article class="glass"><div class="icon">🌿</div><h3>Piles</h3><p>We treat in piles. Rectal bleeding or persistent pain should be assessed rather than automatically assumed to be piles.</p></article>
+</div>
+<div class="note glass">Medical note: This website is for general information and contact only. Do not stop prescribed medicines or use unverified remedies without discussing them with a qualified healthcare professional.</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<div class="heading"><div class="tag">Get in touch</div><h2>Your questions are welcome.</h2><p>Call, send a WhatsApp message, or visit the YouTube channel.</p></div>
+<div class="contact-grid">
+<div class="panel glass">
+<h2>Contact Vaidya Vinit Kumar</h2>
+<p>Choose your preferred way to connect.</p>
+<div class="contact-actions">
+<a class="btn" href="tel:+919934903404">☎ Call Now</a>
+<a class="btn light" href="https://wa.me/919934903404" target="_blank" rel="noopener">✉ WhatsApp Message</a>
+<a class="btn light" href="https://youtube.com/@vaidya_vinit_kumar?si=UHNL05i-L5Smpios" target="_blank" rel="noopener">▶ YouTube Channel</a>
+</div>
+</div>
+<div class="panel glass">
+<div class="detail">📞 <small>Phone</small><a href="tel:+919934903404">+91 99349 03404</a></div>
+<div class="detail">💬 <small>WhatsApp</small><a href="https://wa.me/919934903404" target="_blank" rel="noopener">Message the centre</a></div>
+
+<div class="detail">▶️ <small>YouTube</small><a href="https://youtube.com/@vaidya_vinit_kumar?si=UHNL05i-L5Smpios" target="_blank" rel="noopener">@vaidya_vinit_kumar</a></div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="youtube glass">
+<div><div class="tag">Watch and learn</div><h2>Vaidya Vinit Kumar on YouTube</h2><p>Visit the channel for videos and information.</p></div>
+<a class="btn" href="https://youtube.com/@vaidya_vinit_kumar?si=UHNL05i-L5Smpios" target="_blank" rel="noopener">Open YouTube ↗</a>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<div class="heading"><div class="tag">FAQs</div><h2>Frequently asked questions</h2></div>
+<details class="glass"><summary>Are calls and messages free?</summary><p>In this centre calls and messages for asking questions, booking appointments, calling or messaging are free and for  unlimited time.</p></details>
+<details class="glass"><summary>Does this website guarantee a cure?</summary><p>No. It does not guarantee a cure or a specific result. Treatment response varies, and medical claims should be discussed with an appropriately qualified healthcare professional.</p></details>
+<details class="glass"><summary>What can cause white patches?</summary><p>Vitiligo is one possible cause, but other skin conditions may also cause lighter patches.</p></details>
+<details class="glass"><summary>How do I contact the centre?</summary><p>Use the Call or WhatsApp buttons, or visit the linked YouTube channel.</p></details>
+</div>
+</section>
+
+<section>
+<div class="wrap panel glass">
+<strong>Medical information</strong>
+<p>If you purchase our aurvedic medicine courseand use it as prescribed by the doctor perfectly then there is 95% chances that your disease will be cured.</p>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap footer">
+<div><strong>Unani Vitiligo Research & Training Centre</strong><br>Vaidya Vinit Kumar</div>
+<div>Website crafted by <strong style="color:#174b37">Amoeba Studios ✦</strong></div>
+<div>© <span id="year"></span> All rights reserved.</div>
+</div></footer>
+
+<div class="quick">
+<a href="tel:+919934903404" aria-label="Call">☎ Call</a>
+<a href="https://wa.me/919934903404" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+</div>
+
+<script>
+const menu=document.getElementById('menu');
+const links=document.getElementById('links');
+menu.addEventListener('click',()=>{
+  links.classList.toggle('open');
+  menu.textContent=links.classList.contains('open')?'✕':'☰';
+});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  links.classList.remove('open');menu.textContent='☰';
+}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
